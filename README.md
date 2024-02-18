@@ -70,6 +70,14 @@ Or generate from console:
  dart generate/report.dart generated html 
 ```
 
+### Html report
+<img width="1208" alt="Screenshot 2024-02-19 at 3 14 54 AM" src="https://github.com/JhonaCodes/todo_info/assets/53523825/042a12c5-f76d-4c39-a67e-2fb299e31f87">
+
+### Markdown report
+
+<img width="847" alt="Screenshot 2024-02-19 at 3 14 24 AM" src="https://github.com/JhonaCodes/todo_info/assets/53523825/e0f06456-5a58-4a8b-b3ec-efd690a2009f">
+
+
 ## Contributing
 
 Contributions to TODO Info Library are welcome! Feel free to submit bug reports, feature requests, or pull requests through the [GitHub repository](https://github.com/JhonaCodes/todo_info).
