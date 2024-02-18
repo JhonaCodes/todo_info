@@ -1,5 +1,12 @@
 # TODO Info Library
 
+
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![text_field_validation](https://img.shields.io/pub/v/todo_info.svg)](https://pub.dev/packages/text_field_validation)
+[![Dart 3](https://img.shields.io/badge/Dart-3%2B-blue.svg)](https://dart.dev/)
+[![Flutter 3.10](https://img.shields.io/badge/Flutter-3%2B-blue.svg)](https://flutter.dev/)
+
 TODO Info Library is a Dart library for analyzing source code files and generating reports based on TODO comments found within them. It provides functionality to generate reports in Markdown (MD), HTML, or both formats, making it versatile and adaptable to different project requirements.
 
 ## Features
@@ -19,7 +26,9 @@ dependencies:
   todo_info: ^1.0.0
 ```
 
-Then, run `dart pub get` to install the library.
+Then, run `flutter pub get` to install the library.
+OR
+run `dart pub get` to install the library.
 
 ## Usage
 
@@ -31,15 +40,39 @@ import 'package:todo_info/todo_info.dart';
 void main() async{
   TodoConfig.initialization(typeInform: TypeInform.both, fileName: 'todo_info');
 }
+
+
+
+@TODO("Need to implement this class, because it is important during build time", priority: TodoPriority.high)
+class ExampleClass{
+
+  @TODO("Requires async implementation", priority: TodoPriority.medium)
+  void someFunction(){
+
+    @TODO("We need to create an external function", priority: TodoPriority.critical)
+    var someCode = (){};
+
+    /// We can use on commented code but with same format
+    // @TODO("It is recommended to do revisions", priority: TodoPriority.low)
+
+  }
+
+  @TODO("Evaluate if 'late' is required", priority: TodoPriority.normal)
+  late final _exampleVariable;
+
+
+}
+
 ```
-
-## Documentation
-
-- [API Documentation](https://link-to-your-api-documentation.com)
+Or generate from console:
+```
+///dart generate/report.dart <name_file> <format>
+ dart generate/report.dart generated html 
+```
 
 ## Contributing
 
-Contributions to TODO Info Library are welcome! Feel free to submit bug reports, feature requests, or pull requests through the [GitHub repository](https://github.com/your-username/todo_info).
+Contributions to TODO Info Library are welcome! Feel free to submit bug reports, feature requests, or pull requests through the [GitHub repository](https://github.com/JhonaCodes/todo_info).
 
 ## License
 
