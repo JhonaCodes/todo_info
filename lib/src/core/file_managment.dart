@@ -67,7 +67,8 @@ class FileManagements {
   /// Validates if a line in a file contains a TODO comment.
   /// Returns a [RegExpMatch] if found, otherwise null.
   RegExpMatch? validateFile(String file) {
-    final match = RegExp(r'@TODO\("(.*?)", priority: TodoPriority\.(.*?)\)').firstMatch(file);
+    final match = RegExp(r'@TODO\("(.*?)", priority: TodoPriority\.(.*?)\)')
+        .firstMatch(file);
     return match;
   }
 

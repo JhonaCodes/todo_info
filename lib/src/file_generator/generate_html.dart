@@ -4,8 +4,7 @@ import 'package:todo_info/src/model/report_model.dart';
 /// A class representing an HTML report generator that extends [GenerateBase].
 /// This class implements the logic to generate an HTML-formatted report based on the data stored in the [reportList].
 ///
-class HTMLGenerator extends GenerateBase{
-
+class HTMLGenerator extends GenerateBase {
   /// Constructor for HTMLGenerator class.
   /// Takes a [fileName] for the generated report.
   ///
@@ -16,13 +15,12 @@ class HTMLGenerator extends GenerateBase{
   /// Generates an HTML-formatted report based on the data stored in the [reportList].
   /// The report is sorted by the level of priority, with higher priority items appearing first.
   @override
-  String exportTextFile(){
-
+  String exportTextFile() {
     final report = StringBuffer();
 
     report.writeln(_baseHtmlTop);
 
-    reportList.sort((a,b)=> b.level.compareTo(a.level));
+    reportList.sort((a, b) => b.level.compareTo(a.level));
 
     for (var reportData in reportList) {
       report.writeln(_baseHtmlMiddle(reportData));
@@ -31,10 +29,9 @@ class HTMLGenerator extends GenerateBase{
     report.writeln(_baseHtmlBottom);
 
     return report.toString();
-
   }
 
-  String get _baseHtmlTop{
+  String get _baseHtmlTop {
     return '''<!DOCTYPE html>
 <html lang="es">
 <head>
@@ -98,7 +95,7 @@ class HTMLGenerator extends GenerateBase{
     <tbody>''';
   }
 
-  String _baseHtmlMiddle(Report report){
+  String _baseHtmlMiddle(Report report) {
     return '''
     <tr>
         <td><a href="${report.filePath}">${report.filePath}</a></td>
@@ -112,7 +109,7 @@ class HTMLGenerator extends GenerateBase{
   ''';
   }
 
-  String get _baseHtmlBottom{
+  String get _baseHtmlBottom {
     return '''
      </tbody>
      </table>

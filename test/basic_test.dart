@@ -7,9 +7,7 @@ import 'package:todo_info/todo_info.dart';
 
 void main() {
   group('TODO Info Library Tests', () {
-
     test('Generate Markdown report', () {
-
       final mdFile = MDGenerator('test_report.md');
       mdFile.reportList.add(Report(
         priority: "low",
@@ -24,21 +22,20 @@ void main() {
 
       final reportContent = mdFile.exportTextFile();
 
-     expect(reportContent.contains("test_report"), true);
-
+      expect(reportContent.contains("test_report"), true);
     });
 
     test('Generate HTML report', () {
-      final todo = TODO('Implement error handling', priority: TodoPriority.high);
+      final todo =
+          TODO('Implement error handling', priority: TodoPriority.high);
       final htmlFile = HTMLGenerator('test_report.html');
-      htmlFile.reportList.add(
-        Report(filePath: 'file path',
-            lineLocation: 30,
-            priority: todo.priority.name,
-            level: todo.priority.index,
-            description: todo.message,
-        )
-      );
+      htmlFile.reportList.add(Report(
+        filePath: 'file path',
+        lineLocation: 30,
+        priority: todo.priority.name,
+        level: todo.priority.index,
+        description: todo.message,
+      ));
       final inform = FileManagements(htmlFile);
 
       inform.build();

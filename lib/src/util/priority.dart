@@ -1,5 +1,4 @@
-enum TodoPriority
-{
+enum TodoPriority {
   /// ***[low]:***
   /// ---
   /// ***Definition:***

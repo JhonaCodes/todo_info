@@ -19,7 +19,9 @@ void main(List<String> arguments) async {
   }
 
   try {
-    final generator = reportType == 'md' ? MDGenerator('$fileName.md') : HTMLGenerator('$fileName.html');
+    final generator = reportType == 'md'
+        ? MDGenerator('$fileName.md')
+        : HTMLGenerator('$fileName.html');
     final inform = FileManagements(generator);
     await inform.build();
     log('Report generated successfully: $fileName.$reportType');

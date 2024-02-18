@@ -14,22 +14,21 @@ import 'package:todo_info/todo_info.dart';
 /// Here's an example of how it can be used:
 ///
 
-@TODO("Need to implement this class, because it is important during build time", priority: TodoPriority.high)
-class ExampleClass{
-
+@TODO("Need to implement this class, because it is important during build time",
+    priority: TodoPriority.high)
+class ExampleClass {
   @TODO("Requires async implementation", priority: TodoPriority.medium)
-  void someFunction(){
-
-    @TODO("We need to create an external function", priority: TodoPriority.critical)
-    var someCode = (){};
+  void someFunction() {
+    @TODO("We need to create an external function",
+        priority: TodoPriority.critical)
+    // ignore: unused_element
+    someCode() {}
 
     /// We can use on commented code but with same format
     // @TODO("It is recommended to do revisions", priority: TodoPriority.low)
-
   }
 
   @TODO("Evaluate if 'late' is required", priority: TodoPriority.normal)
-  late final _exampleVariable;
-
-
+  // ignore: unused_field
+  late final _exampleVariable = "";
 }
