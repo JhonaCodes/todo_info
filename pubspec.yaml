@@ -1,7 +1,8 @@
 name: todo_info
-description: A starting point for Dart libraries or applications.
+description: The TODO Info library analyzes code for TODO comments and reports.
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+repository: https://github.com/JhonaCodes/todo_info
+homepage: https://jhonacode.com
 
 environment:
   sdk: ^3.2.6

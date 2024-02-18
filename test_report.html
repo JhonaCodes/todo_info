@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report de TODOS</title>
+    <style>
+        h1 {
+            color: #77dd77;
+            font-family: sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .priority-1 {
+            background-color: #444;
+            color: #fff;
+        }
+        .priority-2 {
+            background-color: #007bff;
+        }
+        .priority-3 {
+            background-color: #ffc107;
+        }
+        .priority-4 {
+            background-color: #ff851b;
+        }
+        .priority-5 {
+            background-color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+<h1>Report TODOS</h1>
+<table>
+    <thead>
+    <tr>
+        <th>File</th>
+        <th>Líne</th>
+        <th class="priority-header">Priority</th>
+        <th class="priority-header">Level</th>
+        <th>Descriptión</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><a href="./example/example_class.dart">./example/example_class.dart</a></td>
+        <td>22</td>
+        <td class="priority-5">critical</td>
+        <td class="priority-5">5</td>
+        <td>
+        We need to create an external function
+        </td>
+    </tr>
+  
+    <tr>
+        <td><a href="./example/example_class.dart">./example/example_class.dart</a></td>
+        <td>16</td>
+        <td class="priority-4">high</td>
+        <td class="priority-4">4</td>
+        <td>
+        Need to implement this class, because it is important during build time
+        </td>
+    </tr>
+  
+    <tr>
+        <td><a href="file path">file path</a></td>
+        <td>30</td>
+        <td class="priority-3">high</td>
+        <td class="priority-3">3</td>
+        <td>
+        Implement error handling
+        </td>
+    </tr>
+  
+    <tr>
+        <td><a href="./example/example_class.dart">./example/example_class.dart</a></td>
+        <td>19</td>
+        <td class="priority-3">medium</td>
+        <td class="priority-3">3</td>
+        <td>
+        Requires async implementation
+        </td>
+    </tr>
+  
+    <tr>
+        <td><a href="./example/example_class.dart">./example/example_class.dart</a></td>
+        <td>30</td>
+        <td class="priority-2">normal</td>
+        <td class="priority-2">2</td>
+        <td>
+        Evaluate if 'late' is required
+        </td>
+    </tr>
+  
+    <tr>
+        <td><a href="./example/example_class.dart">./example/example_class.dart</a></td>
+        <td>26</td>
+        <td class="priority-1">low</td>
+        <td class="priority-1">1</td>
+        <td>
+        It is recommended to do revisions
+        </td>
+    </tr>
+  
+     </tbody>
+     </table>
+     </body>
+     </html>
+  
