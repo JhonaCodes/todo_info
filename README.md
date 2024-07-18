@@ -24,7 +24,7 @@ To use TODO Info Library in your Dart project, add the following dependency to y
 
 ```yaml
 dependencies:
-  todo_info: ^1.0.0
+  todo_info: ^1.0.1
 ```
 
 Then, run `flutter pub get` to install the library.

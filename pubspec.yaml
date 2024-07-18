@@ -1,11 +1,11 @@
 name: todo_info
 description: The TODO Info library analyzes code for TODO comments and reports.
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/JhonaCodes/todo_info
 homepage: https://jhonacode.com
 
 environment:
-  sdk: ^3.2.6
+  sdk: ^3.4.3
 
 # Add regular dependencies here.
 dependencies:

@@ -1,4 +1,8 @@
 # Version 1.0.0 Changes
+- Upgrade SDK.
+
+
+# Version 1.0.0 Changes
 
 ## Features
 
